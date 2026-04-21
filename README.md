@@ -21,12 +21,12 @@ Implemented in this stage:
 - MVP specification
 - architecture decisions
 - public repository rules
+- initial Tradovate drawing tool shell
+- pure calculation engine with local unit tests
 
 Not implemented yet:
 
-- Tradovate drawing tool runtime code
-- package setup
-- automated tests
+- full Tradovate runtime verification inside the platform
 - release workflow
 
 ## Guiding Decisions
@@ -53,6 +53,14 @@ src/
 tests/
 ```
 
+## Local Development
+
+- Tradovate entrypoint: `riskRewardDrawingTool.js`
+- test command: `npm test`
+
+The calculation engine and state logic can be tested locally in Node.
+The Tradovate drawing runtime still needs in-platform validation.
+
 ## Tradovate Constraints
 
 The design is aligned to Tradovate Custom Drawing Tool primitives documented here:
@@ -74,4 +82,3 @@ The next implementation step should be a minimal vertical slice:
 1. three-anchor Tradovate drawing tool shell
 2. pure calculation module with deterministic tests
 3. label rendering for entry, stop loss, take profit, and risk:reward
-
