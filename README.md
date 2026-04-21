@@ -56,6 +56,7 @@ tests/
 ## Local Development
 
 - Tradovate entrypoint: `riskRewardDrawingTool.js`
+- first Tradovate candidate: `tradovate/RiskRewardPanel.candidate.js`
 - test command: `npm test`
 
 The calculation engine and state logic can be tested locally in Node.
